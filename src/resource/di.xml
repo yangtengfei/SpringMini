@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependency-mappings>
+	<bean>
+		<name>user</name>
+		<class>com.tengfeiyang.model.UserBean</class>
+		<property>
+			<name>userName</name>
+		</property>
+		<property>
+			<name>password</name>
+		</property>
+		<property>
+			<name>id</name>
+		</property>
+	</bean>
+	<bean>
+		<name>login</name>
+		<class>com.tengfeiyang.action.LoginAction</class>
+		<property>
+			<name>userBean</name>
+			<ref-class>user</ref-class>
+		</property>
+	</bean>
+	
+</dependency-mappings>

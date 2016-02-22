@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<action-controller>
+	<action name="login" class="com.tengfeiyang.action.LoginAction" method="login">
+		<result name="success" type="forward">success.jsp</result>
+		<result name="fail" type="redirect">fail.jsp</result>
+	</action>
+</action-controller>
