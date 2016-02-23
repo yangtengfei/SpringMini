@@ -54,7 +54,7 @@ public class LoginController extends HttpServlet {
 		String actionName = ParseText.parseAction(request);
 		String xmlUrl = "E:/WorkSpace/workSpace-luna/SimpleController_02/src/resource/controller.xml";
 		try {
-			// 检查对应name的 action，如果有返回 相应的结点属性
+			// 检查对应name的 action，如果有则返回 相应的结点属性
 			Map<String, String> map = ParseText.parseXML(xmlUrl, actionName);
 			if (null != map) {
 
